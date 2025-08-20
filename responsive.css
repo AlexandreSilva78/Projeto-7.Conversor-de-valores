@@ -1,0 +1,135 @@
+
+/* Desktops e telas grandes */
+@media (min-width: 768px) and (max-width: 992px) {
+     body {
+        font-size: 14px;
+    }
+
+    main {
+        width: 670px;
+        height: 500px;
+    }
+
+    .titulo-do-site {
+        font-size: 15px;
+    }
+
+    input {
+        width: 97%;
+    }
+
+    section {
+        height: 235px;
+        flex-direction: row;
+        padding: 5px;
+    }
+
+    img {
+    width: 65px;
+    }
+
+    .seta-baixo {
+        position: absolute;
+        width: 50px;
+        margin: 10px;
+        left: 45%;
+        top: 54px;
+    }
+
+    .currency-box {
+        gap: 15px;
+        margin-left: 15px;
+    }
+
+    .currency-value-to-convert, .currency-value {
+        font-size: 15px;
+    }  
+
+}
+/* Estilos para telas ≥ 768px */
+@media (min-width: 481px) and (max-width: 768px) {   
+
+    .titulo-do-site {
+        font-size: 15px;
+    }
+
+    main {
+        width: 415px;
+    }
+
+    input {
+        width: 95%;
+    }
+
+    section {    
+        padding: 80px;
+    }
+
+    .seta-baixo {
+        width: 45px;
+    }
+
+    .currency-box {
+        margin-left: 5px;
+        width: 80px;        
+        flex-direction: column;
+    }
+    
+    #currency-box-1 {
+    left: 40px;
+    }
+
+    #currency-box-2 {
+    right: 40px;
+    }
+}
+
+/* Estilos para telas ≥ 481px */
+@media (max-width: 481px){
+   main {
+        width: 220px;
+    }
+
+    .titulo-do-site {
+        font-size: 10px;
+    }
+
+    input {
+        width: 92%;
+    }
+
+    section {    
+        padding: 95px;
+        display: flex;
+        align-items: center; /* Alinha verticalmente */
+        justify-content: center; /* Alinha horizontalmente */
+    }
+
+    img {
+        width: 40px;
+        height: 80%;
+    }
+
+    .seta-baixo {
+        width: 30px;
+        transform: rotate(360deg);
+        margin-right: 5px;
+    }
+
+    .currency-box {
+        margin-left: 5px;
+        width: 80px;        
+        flex-direction: column;
+        gap: 2px;
+    }
+    
+    #currency-box-1 {
+        top: 10px;
+        left: 60px;
+    }
+
+    #currency-box-2 {
+        top: 160px;
+        right: 75px;
+    }
+}

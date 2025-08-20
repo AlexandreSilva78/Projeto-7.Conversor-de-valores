@@ -1,0 +1,220 @@
+
+
+* {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+body {  
+    margin: 0px auto;
+    height: 100vh;
+    background: rgb(53, 53, 53);    
+    position: relative; /* Define o corpo como contexto de posicionamento */
+}
+
+.sobreposta {
+  position: absolute; /* Posiciona a imagem sobreposta */
+  background-image: url(./assets/Cifrão-fundo-branco-sem-bg.png);
+  background-size: cover; /* Garante que a imagem cubra todo o corpo */
+  background-repeat: no-repeat; /* Evita repetição da imagem */
+  top: 0;
+  left: 0;
+  width: 100%; /* Faz a imagem sobreposta ocupar toda a largura */
+  height: 100vh; /* Faz a imagem sobreposta ocupar toda a altura */
+  z-index: 2; /* Garante que a imagem sobreposta esteja acima do fundo */
+  /* Outras propriedades da imagem sobreposta, como opacidade, etc. */
+}
+
+header {
+    position: relative;
+    margin-top: 0;
+    height: 50px;
+    background: rgba(0,0, 0, 7);
+}
+
+.titulo-do-site {
+    position: absolute;
+    font-size: 20px;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #772fd3;
+}
+
+.logo {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 5px;
+    border-radius: 20px;
+    z-index: 1;
+    right: 50px;
+}
+
+.mixed-ticker-container {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    background-color: #1e293b;
+    color: white;
+    padding: 5px 0;
+    border-radius: 5px;
+    top: 20px;
+}
+
+.mixed-ticker {
+    display: flex;
+    white-space: nowrap;
+    animation: scroll 60s linear infinite;
+}
+
+.ticker-item {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    font-family: 'Arial', sans-serif;
+}
+
+.ticker-symbol {
+    font-weight: bold;
+    margin-right: 5px;
+    color: #f0f0f0;
+}
+
+.ticker-price {
+    margin-right: 5px;
+}
+
+.ticker-change {
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-size: 0.8em;
+}
+
+.positive {
+    background-color: #10b981;
+    color: white;
+}
+
+.negative {
+    background-color: #ef4444;
+    color: white;
+}
+
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+main {
+
+    background-image: url(./assets/Cifrão-fundo-branco-sem-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 900px;
+    height: 500px;
+    background: #f4f4f4;
+    border-radius: 20px;
+    margin: 10px auto;
+    padding: 30px;
+    padding-top: 10px;
+    z-index: 1;
+}
+
+label {
+    color: #777777;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+select, input {
+    background: #ffffff;
+    border: 2px solid #bbbbbb;
+    border-radius: 4px;
+    height: 40px;
+    width: 100%;
+    margin-bottom: 15px;
+    padding-left: 18px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #555555;
+    cursor: pointer;
+}
+
+input {
+    width: 98%;
+}
+
+button {
+    background: #772fd3;
+    border-radius: 5px;
+    width: 100%;
+    height: 40px;
+    border: none;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+button:active {
+    opacity: 0.6;
+}
+
+section {
+    position: relative;
+    border: 1px solid #772fd3;
+    border-radius: 20px;
+    margin-top: 10px;
+    padding: 65px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    width: 65px;
+}
+
+.seta-baixo {
+    margin: 10px 0;
+    transform: rotate(270deg);
+}
+
+.currency-box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.currency {
+    color: #777777;
+    font-size: 14px;
+}
+
+#currency-box-1{
+    position: absolute;
+    left: 100px;
+    top: 50px;
+
+}
+
+#currency-box-2 {
+    position: absolute;
+    right: 100px;
+    top: 50px;
+
+}
+
+.currency-value, .currency-value-to-convert {
+    color: #555555;
+    font-weight: 700;
+    font-size: 20px;
+}
