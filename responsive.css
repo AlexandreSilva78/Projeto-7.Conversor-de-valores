@@ -13,22 +13,22 @@
 
     main {
         width: 90%;
-        height: 85%;
+        height: 80%;
         padding-top: 20px;
     }
 
     label {
-        font-size: 40px;
+        font-size: 15px;
     }
 
     select, input {
-        height: 75px;
-        font-size: 55px;
-        margin-bottom: 20px;
+        height: 30px;
+        font-size: 20px;
+        margin-bottom: 5px;
     }    
 
     button {
-        height: 95px;
+        height: 40px;
     }
 
     input {
@@ -36,31 +36,31 @@
     }
 
     section {
-        height: 40%;
+        height: 60%;
     }
 
     .seta-baixo {
-        width: 110px;
-        right: 42%;
+        width: 60px;
+        right: 45%;
         top: 20%;
     }
 
     .currency {
-        font-size: 70px;
+        font-size: 30px;
     }
 
     .currency-box {
         margin: 5%;
         width: 25%; 
-        gap: 60px;       
+        gap: 20px;       
     }
 
     .currency-value, .currency-value-to-convert {
-        font-size: 60px;
+        font-size: 30px;
     }
 
     img {
-        width: 150px;
+        width: 70px;
     }
 
     #currency-box-1 {
