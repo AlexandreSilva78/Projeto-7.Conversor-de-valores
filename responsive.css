@@ -1,177 +1,200 @@
 
-/* Desktops e telas grandes */
-@media (min-width: 768px) and (max-width: 992px) {
-     body {
-        font-size: 14px;
-    }
 
-    main {
-        width: 670px;
-        height: 500px;
-    }
-
-    .titulo-do-site {
-        font-size: 15px;
-    }
-
-    input {
-        width: 97%;
-    }
-
-    section {
-        height: 235px;
-        flex-direction: row;
-        padding: 5px;
-    }
-
-    img {
-    width: 65px;
-    }
-
-    .seta-baixo {
-        position: absolute;
-        width: 50px;
-        margin: 10px;
-        left: 45%;
-        top: 54px;
-    }
-
-    .currency-box {
-        gap: 15px;
-        margin-left: 15px;
-    }
-
-    .currency-value-to-convert, .currency-value {
-        font-size: 15px;
-    }  
-
-}
 /* Estilos para telas ≥ 768px */
-@media (min-width: 481px) and (max-width: 768px) {   
+@media (min-width: 768px) and (max-width: 1024px) {   
 
     .titulo-do-site {
-        font-size: 15px;
+        font-size: 25px;
+    }
+
+    .mixed-ticker-container {
+        top: 40px;
     }
 
     main {
         width: 90%;
-        height: 80%;
+        height: 85%;
+        padding-top: 20px;
+    }
+
+    label {
+        font-size: 40px;
+    }
+
+    select, input {
+        height: 75px;
+        font-size: 55px;
+        margin-bottom: 20px;
+    }    
+
+    button {
+        height: 95px;
     }
 
     input {
         width: 95%;
     }
 
-    section {    
-        padding: 80px;
+    section {
+        height: 40%;
+    }
+
+    .seta-baixo {
+        width: 110px;
+        right: 42%;
+        top: 20%;
+    }
+
+    .currency {
+        font-size: 70px;
+    }
+
+    .currency-box {
+        margin: 5%;
+        width: 25%; 
+        gap: 60px;       
+    }
+
+    .currency-value, .currency-value-to-convert {
+        font-size: 60px;
+    }
+
+    img {
+        width: 150px;
+    }
+
+    #currency-box-1 {
+        position: absolute;
+        top: 0%;
+    }
+
+    #currency-box-2 {
+        top: 0%;
+    }
+    
+}
+/* Estilos para telas ≥ 768px */
+@media (min-width: 481px) and (max-width: 767px) {   
+
+    .titulo-do-site {
+        font-size: 15px;
+    }
+
+    main {
+        width: 70%;
+    }
+
+    input {
+        width: 95%;
     }
 
     .seta-baixo {
         width: 45px;
+        right: 42%;
+        top: 20%;
     }
 
     .currency-box {
-        margin-left: 5px;
-        width: 80px;        
-        flex-direction: column;
+        margin: 5%;
+        width: 25%;        
     }
     
-    #currency-box-1 {
-    left: 40px;
-    }
-
-    #currency-box-2 {
-    right: 40px;
-    }
 }
 
-/* Estilos para telas ≥ 481px */
-@media (min-width: 302px) and (max-width: 481px){
+/* Estilos para telas ≥ 480px */
+@media (min-width: 300px) and (max-width: 480px) {   
 
     .titulo-do-site {
-        font-size: 12px;
+        font-size: 15px;
     }
 
     main {
-        width: 80%;
-        height: 80%;
+        width: 70%;
     }
 
     input {
-        width: 92%;
-    }
-
-    section {    
-        padding: 23%;
-        display: flex;
-        align-items: center; /* Alinha verticalmente */
-        justify-content: center; /* Alinha horizontalmente */
+        width: 95%;
     }
 
     img {
         width: 40px;
-        height: 80%;
+    }
+
+    section { 
+        height: 50%;
     }
 
     .seta-baixo {
-        width: 30px;
         transform: rotate(360deg);
-        margin-right: 5px;
+        width: 35px;
+        right: 42%;
+        top: 33%;
     }
 
     .currency-box {
-        margin-left: 5px;
-        width: 80px;        
-        flex-direction: column;
-        gap: 2px;
+        margin: 5%;
+        width: 35%;
+        gap: 3px;       
     }
-    
+
     #currency-box-1 {
-        top: 10px;
-        left: 37%;
+        position: absolute;
+        left: 28%;
+        top: -2%;
     }
 
     #currency-box-2 {
-        top: 150px;
-        right: 40%;
+        right: 27%;
+        top: 60%;
     }
+    
 }
 
-@media (max-width: 301px){
+/* Estilos para telas ≥ 768px */
+@media (min-width: 200px) and (max-width: 299px) {   
 
     .titulo-do-site {
         font-size: 12px;
     }
 
     main {
-        width: 60%;
-        height: 80%;
+        width: 70%;
     }
 
-    section {    
-        padding: 48%;
+    input {
+        width: 95%;
     }
 
     img {
-        width: 35px;
+        width: 40px;
+    }
+
+    section { 
+        height: 50%;
     }
 
     .seta-baixo {
         transform: rotate(360deg);
+        width: 35px;
+        right: 42%;
+        top: 33%;
     }
 
     .currency-box {
-        gap: 2px;
+        margin: 5%;
+        width: 35%;
+        gap: 3px;       
     }
 
     #currency-box-1 {
-        top: 5px;
-        left: 30%;
+        position: absolute;
+        left: 28%;
+        top: -2%;
     }
 
     #currency-box-2 {
-        top: 145px;
-        right: 36%;
+        right: 27%;
+        top: 60%;
     }
-
+    
 }
